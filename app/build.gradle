@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+def config = rootProject.ext.android
+
+android {
+
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+
+    defaultConfig {
+
+        applicationId "com.dapi.suse.zhongliaolibs"
+
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode rootProject.ext.appVersion.versionCode
+        versionName rootProject.ext.appVersion.versionName
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile rootProject.ext.appLibs
+    project(":core")
+
+}

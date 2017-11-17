@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven' // for jitPack.io
+group='com.github.yudapiandroid'
+
+def config = rootProject.ext.android
+
+android {
+
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+
+    defaultConfig {
+
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode rootProject.ext.coreVersion.versionCode
+        versionName rootProject.ext.coreVersion.versionName
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile rootProject.ext.coreLibs
+}

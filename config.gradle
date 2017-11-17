@@ -1,0 +1,91 @@
+
+def V7_VERSION = '25.0.0'
+def V4_VERSION = '25.0.0'
+
+//ViewLibraries
+def ijkplayer = '0.7.7.1'
+
+//DataLibraries
+def videocache = '2.6.4'
+def transitionseverywhere = '1.7.0'
+
+ext{
+
+    android = [
+
+            compileSdkVersion : 25,
+            buildToolsVersion : "25.0.0",
+            minSdkVersion     : 15,
+            targetSdkVersion  : 23
+    ]
+
+    dependencies = [
+            v7                   : "com.android.support:appcompat-v7:${V7_VERSION}",
+            v7_card_view         : "com.android.support:cardview-v7:${V7_VERSION}",
+            v7_recyclerview      : "com.android.support:recyclerview-v7:${V7_VERSION}",
+            design               : "com.android.support:design:${V7_VERSION}",
+            v4                   : "com.android.support:support-v4:${V4_VERSION}",
+
+            //video player
+            ijkplayer_java       : "tv.danmaku.ijk.media:ijkplayer-java:${ijkplayer}",
+            ijkplayer_armv7a     : "tv.danmaku.ijk.media:ijkplayer-armv7a:${ijkplayer}",
+            ijkplayer_armv5      : "tv.danmaku.ijk.media:ijkplayer-armv5:${ijkplayer}",
+            ijkplayer_arm64      : "tv.danmaku.ijk.media:ijkplayer-arm64:${ijkplayer}",
+            ijkplayer_x86_64     : "tv.danmaku.ijk.media:ijkplayer-x86_64:${ijkplayer}",
+            ijkplayer_x86        : "tv.danmaku.ijk.media:ijkplayer-x86:${ijkplayer}",
+            ijkplayer_exo        : "tv.danmaku.ijk.media:ijkplayer-exo:${ijkplayer}",
+            transitionseverywhere: "com.andkulikov:transitionseverywhere:${transitionseverywhere}",
+            videocache           : "com.danikula:videocache:${videocache}",
+
+            //三方库
+            photoView            : "com.bm.photoview:library:1.4.0",
+            okHttp               : "com.squareup.okhttp3:okhttp:3.6.0",
+            fastjson             : "com.alibaba:fastjson:1.1.54.android",
+            banner               : "com.youth.banner:banner:1.4.5",
+            gpuimage             : "jp.co.cyberagent.android.gpuimage:gpuimage-library:1.3.0",
+            butterknife          : "com.jakewharton:butterknife:6.1.0",
+            observablescrollview : "com.github.ksoichiro:android-observablescrollview:1.5.0",
+            explosionfield       : "tyrantgit:explosionfield:1.0.1",// 炸裂效果  https://github.com/tyrantgit/ExplosionField
+            sugar                : "com.github.satyan:sugar:1.5", //ORM  https://github.com/satyan/sugar
+            activeandroid        : "com.michaelpardo:activeandroid:3.1.0-SNAPSHOT",//orm
+            statusbaruitl        : "com.jaeger.statusbaruitl:library:1.1.1",
+            alertview            : "com.bigkoo:alertview:1.0.3",
+            upyun                : "com.upyun:upyun-android-sdk:2.0.1",
+            jpush                : "cn.jiguang.sdk:jpush:3.0.3",
+            jcore                : "cn.jiguang.sdk:jcore:1.1.1",
+            rxandroid            : 'io.reactivex:rxandroid:1.1.0',
+            rxjava               : 'io.reactivex:rxjava:1.1.0',
+            dateTime             : "joda-time:joda-time:2.9.4",
+            smoothProgressBar    : "com.github.castorflex.smoothprogressbar:library-circular:1.0.1",
+            shadowImageView      : "com.yinglan.shadowimageview:shadowimageview:1.0.2",
+
+            //ping++
+            pingcore             : "com.pingxx:pingpp-core:2.1.9",
+            ping_alipay          : "com.pingxx:pingpp-alipay:2.1.9",
+            ping_wx              : "com.pingxx:pingpp-wxpay:2.1.9"
+
+    ]
+
+
+    //================================================================================================================
+    appLibs = [
+            dependencies.v7
+    ]
+
+    appVersion = [
+            versionCode: 1,
+            versionName: "1.0"
+    ]
+
+    //================================================================================================================
+
+    coreLibs = [
+
+    ]
+
+    coreVersion = [
+            versionCode : 1,
+            versionName : "1.0"
+    ]
+
+}
