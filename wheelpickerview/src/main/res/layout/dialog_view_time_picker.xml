@@ -76,7 +76,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <com.suse.yuxin.pickerview.LoopView
+                <com.dapi.suse.wheelpickerview.pickerview.LoopView
                     android:id="@+id/dialog_view_time_picker_lv_hour"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
@@ -88,7 +88,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
-                <com.suse.yuxin.pickerview.LoopView
+                <com.dapi.suse.wheelpickerview.pickerview.LoopView
                     android:id="@+id/dialog_view_date_picker_lv_min"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
