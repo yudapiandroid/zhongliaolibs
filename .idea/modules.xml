@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/acp/acp.iml" filepath="$PROJECT_DIR$/acp/acp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circleimageview/circleimageview.iml" filepath="$PROJECT_DIR$/circleimageview/circleimageview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/citypicker/citypicker.iml" filepath="$PROJECT_DIR$/citypicker/citypicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gsyvideoplayer/gsyvideoplayer.iml" filepath="$PROJECT_DIR$/gsyvideoplayer/gsyvideoplayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/image_corpper/image_corpper.iml" filepath="$PROJECT_DIR$/image_corpper/image_corpper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mpchartlib/mpchartlib.iml" filepath="$PROJECT_DIR$/mpchartlib/mpchartlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ptr-lib/ptr-lib.iml" filepath="$PROJECT_DIR$/ptr-lib/ptr-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spinkit_library/spinkit_library.iml" filepath="$PROJECT_DIR$/spinkit_library/spinkit_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wheelpickerview/wheelpickerview.iml" filepath="$PROJECT_DIR$/wheelpickerview/wheelpickerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/zhongliaolibs.iml" filepath="$PROJECT_DIR$/zhongliaolibs.iml" />
     </modules>
   </component>

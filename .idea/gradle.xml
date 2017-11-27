@@ -8,8 +8,17 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/acp" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/circleimageview" />
+            <option value="$PROJECT_DIR$/citypicker" />
             <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/gsyvideoplayer" />
+            <option value="$PROJECT_DIR$/image_corpper" />
+            <option value="$PROJECT_DIR$/mpchartlib" />
+            <option value="$PROJECT_DIR$/ptr-lib" />
+            <option value="$PROJECT_DIR$/spinkit_library" />
+            <option value="$PROJECT_DIR$/wheelpickerview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -63,7 +63,6 @@ ext{
             pingcore             : "com.pingxx:pingpp-core:2.1.9",
             ping_alipay          : "com.pingxx:pingpp-alipay:2.1.9",
             ping_wx              : "com.pingxx:pingpp-wxpay:2.1.9"
-
     ]
 
 
@@ -88,4 +87,47 @@ ext{
             versionName : "1.0"
     ]
 
+    //=========================================================================================
+
+    wheelPickerView = [
+            dependencies.v7
+    ]
+
+
+    // ====================================================================================
+
+    ptrLib = [
+            dependencies.v7_recyclerview,
+            dependencies.smoothProgressBar
+    ]
+
+    //=============================================================================
+
+    imageCorpper = [
+            dependencies.v7
+    ]
+
+
+    //==========================================================================
+
+    gsyVideoPlayer = [
+            dependencies.ijkplayer_java,
+            dependencies.ijkplayer_exo,
+            dependencies.transitionseverywhere,
+            dependencies.videocache,
+            dependencies.v4,
+            dependencies.v7
+    ]
+
+    //=======================================================================
+    acpLib = [
+            dependencies.v7
+    ]
+
+    //========================================================================
+
+
+    citypicker = [
+            dependencies.v7
+    ]
 }
