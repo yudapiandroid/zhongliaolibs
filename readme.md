@@ -151,15 +151,15 @@ allprojects {
 
 ...
 
-compile 'com.github.yudapiandroid.zhongliaolibs:core:1.7'
-compile 'com.github.yudapiandroid.zhongliaolibs:wheelpickerview:1.7'
-compile 'com.github.yudapiandroid.zhongliaolibs:ptr-lib:1.7'
-compile 'com.github.yudapiandroid.zhongliaolibs:spinkit_library:1.7'
-compile 'com.github.yudapiandroid.zhongliaolibs:image_corpper:1.7'
-compile 'com.github.yudapiandroid.zhongliaolibs:gsyvideoplayer:1.7'
-compile 'com.github.yudapiandroid.zhongliaolibs:mpchartlib:1.7'
-compile 'com.github.yudapiandroid.zhongliaolibs:acp:1.7'
-compile 'com.github.yudapiandroid.zhongliaolibs:citypicker:1.7'
-compile 'com.github.yudapiandroid.zhongliaolibs:circleimageview:1.7'
+compile 'com.github.yudapiandroid.zhongliaolibs:core:1.8'
+compile 'com.github.yudapiandroid.zhongliaolibs:wheelpickerview:1.8'
+compile 'com.github.yudapiandroid.zhongliaolibs:ptr-lib:1.8'
+compile 'com.github.yudapiandroid.zhongliaolibs:spinkit_library:1.8'
+compile 'com.github.yudapiandroid.zhongliaolibs:image_corpper:1.8'
+compile 'com.github.yudapiandroid.zhongliaolibs:gsyvideoplayer:1.8'
+compile 'com.github.yudapiandroid.zhongliaolibs:mpchartlib:1.8'
+compile 'com.github.yudapiandroid.zhongliaolibs:acp:1.8'
+compile 'com.github.yudapiandroid.zhongliaolibs:citypicker:1.8'
+compile 'com.github.yudapiandroid.zhongliaolibs:circleimageview:1.8'
 ```
 
