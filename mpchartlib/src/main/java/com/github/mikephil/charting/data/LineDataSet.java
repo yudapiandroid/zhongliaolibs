@@ -20,7 +20,7 @@ public class LineDataSet extends LineRadarDataSet<Entry> implements ILineDataSet
     /**
      * Drawing mode for this line dataset
      **/
-    private LineDataSet.Mode mMode = Mode.LINEAR;
+    private Mode mMode = Mode.LINEAR;
 
     /**
      * List representing all colors that are used for the circles
@@ -111,7 +111,7 @@ public class LineDataSet extends LineRadarDataSet<Entry> implements ILineDataSet
      * @return
      */
     @Override
-    public LineDataSet.Mode getMode() {
+    public Mode getMode() {
         return mMode;
     }
 
@@ -120,7 +120,7 @@ public class LineDataSet extends LineRadarDataSet<Entry> implements ILineDataSet
      *
      * @return
      */
-    public void setMode(LineDataSet.Mode mode) {
+    public void setMode(Mode mode) {
         mMode = mode;
     }
 
