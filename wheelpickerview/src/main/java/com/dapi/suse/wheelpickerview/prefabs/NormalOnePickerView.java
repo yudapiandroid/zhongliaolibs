@@ -10,9 +10,9 @@ import android.view.animation.AnimationSet;
 import android.view.animation.TranslateAnimation;
 import android.widget.FrameLayout;
 
-import com.suse.yuxin.KeyBoardUtils;
-import com.suse.yuxin.R;
-import com.suse.yuxin.pickerview.LoopView;
+import com.dapi.suse.wheelpickerview.KeyBoardUtils;
+import com.dapi.suse.wheelpickerview.R;
+import com.dapi.suse.wheelpickerview.pickerview.LoopView;
 
 import java.util.ArrayList;
 import java.util.List;
