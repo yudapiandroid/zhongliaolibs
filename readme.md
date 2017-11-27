@@ -135,3 +135,31 @@ recyclerView.fristLoadData();
 #### wheelpickerview
 
 - 滚轮选择
+
+---
+
+#### 添加依赖
+
+```xml
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+       
+    }
+}
+
+...
+
+compile 'com.github.yudapiandroid.zhongliaolibs:core:1.4'
+compile 'com.github.yudapiandroid.zhongliaolibs:wheelpickerview:1.4'
+compile 'com.github.yudapiandroid.zhongliaolibs:ptr-lib:1.4'
+compile 'com.github.yudapiandroid.zhongliaolibs:spinkit_library:1.4'
+compile 'com.github.yudapiandroid.zhongliaolibs:image_corpper:1.4'
+compile 'com.github.yudapiandroid.zhongliaolibs:gsyvideoplayer:1.4'
+compile 'com.github.yudapiandroid.zhongliaolibs:mpchartlib:1.4'
+compile 'com.github.yudapiandroid.zhongliaolibs:acp:1.4'
+compile 'com.github.yudapiandroid.zhongliaolibs:citypicker:1.4'
+compile 'com.github.yudapiandroid.zhongliaolibs:circleimageview:1.4'
+```
+
