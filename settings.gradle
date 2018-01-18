@@ -1,1 +1,1 @@
-include ':app', ':core', ':wheelpickerview', ':ptr-lib', ':spinkit_library', ':image_corpper', ':gsyvideoplayer', ':mpchartlib', ':acp', ':citypicker', ':circleimageview', ':views'
+include ':app', ':core', ':wheelpickerview', ':ptr-lib', ':spinkit_library', ':image_corpper', ':gsyvideoplayer', ':mpchartlib', ':acp', ':citypicker', ':circleimageview'
