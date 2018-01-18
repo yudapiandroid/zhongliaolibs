@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/mpchartlib/mpchartlib.iml" filepath="$PROJECT_DIR$/mpchartlib/mpchartlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/ptr-lib/ptr-lib.iml" filepath="$PROJECT_DIR$/ptr-lib/ptr-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/spinkit_library/spinkit_library.iml" filepath="$PROJECT_DIR$/spinkit_library/spinkit_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/views/views.iml" filepath="$PROJECT_DIR$/views/views.iml" />
       <module fileurl="file://$PROJECT_DIR$/wheelpickerview/wheelpickerview.iml" filepath="$PROJECT_DIR$/wheelpickerview/wheelpickerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/zhongliaolibs.iml" filepath="$PROJECT_DIR$/zhongliaolibs.iml" />
     </modules>

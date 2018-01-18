@@ -1,12 +1,11 @@
 package com.dapi.suse.zhongliaolibs;
 
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.LinearLayout;
+
+import com.suse.dapi.views.modelview.DateTimeChoseView;
 
 import in.srain.cube.views.ptr.PtrRecyclerView;
 
@@ -14,47 +13,18 @@ public class MainActivity extends AppCompatActivity {
 
     private PtrRecyclerView view;
 
+    private DateTimeChoseView choseView;
+    private LinearLayout rootLinearLayout;
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        view = (PtrRecyclerView) findViewById(R.id.prv_content);
-        GridLayoutManager manager = new GridLayoutManager(this,1);
-        view.setLayoutManager(manager);
-        view.setAdapter(new RecyclerView.Adapter() {
-            @Override
-            public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-                TextView textView = new TextView(parent.getContext());
-                return new TestViewHolder(textView);
-            }
-
-            @Override
-            public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-
-            }
-
-            @Override
-            public int getItemCount() {
-                return 0;
-            }
-        });
-        view.setLoadDataInterface(new PtrRecyclerView.PtrRecyclerViewInterface() {
-            @Override
-            public void loadData(boolean isFrist) {
-                view.getAdapter().notifyDataSetChanged();
-            }
-            @Override
-            public boolean haveMoreData() {
-                return false;
-            }
-        });
-        view.fristLoadData();
+        choseView = (DateTimeChoseView) findViewById(R.id.content);
+        rootLinearLayout = (LinearLayout) findViewById(R.id.root);
+        DateTimeChoseView timeChoseView = new DateTimeChoseView(this,"title","hint","yyyy-mm-dd",true,2018,2018,DateTimeChoseView.CHOSE_DATA);
+        rootLinearLayout.addView(timeChoseView);
     } // end m
-}
 
-
-class TestViewHolder extends RecyclerView.ViewHolder{
-    public TestViewHolder(View itemView) {
-        super(itemView);
-    }
 }

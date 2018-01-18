@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="DateTimeChoseView">
+        <attr name="title" format="string" />
+        <attr name="timeFormat" format="string"/>
+        <attr name="hint" format="string"/>
+        <attr name="mustChose" format="boolean"/>
+        <attr name="whatChose">
+            <enum name="date" value="1"></enum>
+            <enum name="time" value="2"></enum>
+        </attr>
+        <attr name="infoTextColor" format="color"/>
+        <attr name="dInfoTextSize" format="integer"/>
+        <attr name="timeTextColor" format="color"/>
+        <attr name="dTimeTextSize" format="integer"/>
+        <attr name="startYear" format="integer"/>
+        <attr name="endYear" format="integer"/>
+    </declare-styleable>
+</resources>

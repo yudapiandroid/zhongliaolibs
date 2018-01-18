@@ -5,7 +5,6 @@ import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.graphics.Rect;
 import android.os.Build;
-import android.util.Log;
 
 import com.github.ybq.android.spinkit.animation.SpriteAnimatorBuilder;
 import com.github.ybq.android.spinkit.sprite.RectSprite;
@@ -13,7 +12,13 @@ import com.github.ybq.android.spinkit.sprite.Sprite;
 import com.github.ybq.android.spinkit.sprite.SpriteContainer;
 
 /**
+ *
+ *
  * Created by ybq.
+ *
+ *
+ *
+ *
  */
 public class Wave extends SpriteContainer {
 

@@ -113,7 +113,9 @@ public class DatePickerView {
             return;
         }
         this.callBack = callBack;
-        KeyBoardUtils.hideKeyBoard((Activity) parentFrameLayout.getContext());
+        if(parentFrameLayout.getContext() instanceof Activity){
+            KeyBoardUtils.hideKeyBoard((Activity) parentFrameLayout.getContext());
+        }
         removeViewFromParent(rootView);
         initDateData(startYear,endYear);
 
@@ -154,7 +156,7 @@ public class DatePickerView {
     }//end show
 
     public void setPostion(final String year, final String month, final String day){
-        rootView.postDelayed(new Runnable() {
+        rootView.post(new Runnable() {
             @Override
             public void run() {
                 int yearPosition = getPosition(years,year);
@@ -167,9 +169,9 @@ public class DatePickerView {
                         int dayPosition = getPosition(days,day);
                         dayLoopView.setCurrentItem(dayPosition >= 0 ? dayPosition : dayLoopView.getCurrentItem());
                     }
-                },700);
+                },300);
             }
-        },500);
+        });
     }
 
 
@@ -215,16 +217,19 @@ public class DatePickerView {
          * 获取一个月有多少天
          */
         int dayNumber = Utils.getDays(year,month);
-        Log.i(LOG_TAG,"year "+year+"   month "+month+"   dayNumber  "+dayNumber);
-        days.clear();
-        for(int i=1;i <= dayNumber;i++){
-            days.add(i < 10 ? "0" + String.valueOf(i) : String.valueOf(i));
+        if(days.size() == dayNumber){
+            return;
+        }else{
+            int currentChose = dayLoopView.getCurrentItem();
+            days.clear();
+            for(int i=1;i <= dayNumber;i++){
+                days.add(i < 10 ? "0" + String.valueOf(i) : String.valueOf(i));
+            }
+            dayLoopView.setList(days);
+            dayLoopView.setCurrentItem(currentChose < days.size() ? currentChose : days.size() - 1);
+            dayLoopView.setNotLoop();
         }
-        dayLoopView.setList(days);
-        dayLoopView.setCurrentItem(days.size() / 2);
-        dayLoopView.setNotLoop();
     }
-
 
     public boolean isShowing() {
         return showing;
@@ -232,12 +237,12 @@ public class DatePickerView {
 
     private void initYearView(int startYear, int endYear){
         years.clear();
-        for(int i=startYear;i < endYear;i++){
+        for(int i=startYear;i <= endYear;i++){
             years.add(String.valueOf(i));
         }
         yearLoopView.setList(years);
         yearLoopView.setNotLoop();
-        yearLoopView.setCurrentItem(years.size() / 2);
+        yearLoopView.setCurrentItem(0);
         yearLoopView.setListener(new LoopListener() {
             @Override
             public void onItemSelect(int item) {
@@ -294,7 +299,6 @@ public class DatePickerView {
         int year = Integer.valueOf(years.get(yearLoopView.getCurrentItem()));
         int month = Integer.valueOf(months.get(monthLoopView.getCurrentItem())) - 1;
         int day = Integer.valueOf(days.get(dayLoopView.getCurrentItem()));
-        Log.i(LOG_TAG,"返回数据  y "+year+"   m "+month+"   d "+day);
         Calendar calendar = Calendar.getInstance();
         calendar.set(year,month,day);
         return calendar.getTime();

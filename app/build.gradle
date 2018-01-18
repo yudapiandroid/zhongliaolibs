@@ -48,4 +48,5 @@ dependencies {
         project(":citypicker")
         project(":circleimageview")*/
     compile project(':ptr-lib')
+    compile project(path: ':views')
 }

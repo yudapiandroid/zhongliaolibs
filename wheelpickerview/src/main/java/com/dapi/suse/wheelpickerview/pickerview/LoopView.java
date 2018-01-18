@@ -215,8 +215,11 @@ public class LoopView extends View {
     }
 
     public final int getCurrentItem() {
-        if (mCurrentItem <= 0) {
+        if (mCurrentItem <= 0 || arrayList == null) {
             return 0;
+        }
+        if(mCurrentItem == arrayList.size()){
+            return arrayList.size() - 1 < 0 ? 0 : arrayList.size() - 1;
         }
         return mCurrentItem;
     }
