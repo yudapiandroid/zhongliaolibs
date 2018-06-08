@@ -204,6 +204,7 @@ public class YearsMonthPickerView {
 
 
     private void initMonthView(){
+        months.clear();
         months.add("全部");
         for(int i = 1;i < 13;i++){
             months.add(i < 10 ? "0" + String.valueOf(i) : String.valueOf(i));
