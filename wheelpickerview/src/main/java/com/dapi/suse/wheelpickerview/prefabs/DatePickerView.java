@@ -253,6 +253,7 @@ public class DatePickerView {
 
 
     private void initMonthView(){
+        this.months.clear();
         for(int i = 1;i < 13;i++){
             months.add(i < 10 ? "0" + String.valueOf(i) : String.valueOf(i));
         }
